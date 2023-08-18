@@ -1,8 +1,0 @@
-# After loading the Database and Schema from Workbench, we can use the following codes in the Command Line
-
-# See Available Databases 
-mysql> show databases;
-
-# Show date and time
-mysql> SELECT now();
-
