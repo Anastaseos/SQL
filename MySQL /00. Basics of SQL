@@ -35,10 +35,16 @@ FOREIGN KEY (BookID) REFERENCES Books(BookID)
 
 
 # Data Manipulation Language
-# INSERT statements for adding books, customers, and orders into the Tables
+# INSERT STATEMENTS for adding books, customers, and orders into the Tables
 
 INSERT INTO Books (Title, Author, PublishDate, ISBN, Price, InStock) 
 VALUES ("The Great Gatsby', 'F. Scott Fitzgerald', '1925-04-10', '9780743273565', 10.99, 20");
 
 INSERT INTO Books (Title, Author, PublishDate, ISBN, Price, InStock) 
 VALUES ('Moby Dick', 'Herman Melville', '1851-10-18', '9781503280786', 12.99, 15);
+
+# SELECT STATMENT
+
+# UPDATE STATEMENT
+
+
