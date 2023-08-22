@@ -7,10 +7,33 @@ USE database_in_question;
 
 # Isolates and prints the parameters listed 
 SELECT 
-	last_name, 	
+  last_name, 	
   first_name, 
   points, 
   (points * 10) + 100 AS "discount points"
 FROM customers
-_________________________________________________________________________
 
+_________________________________________________________________________
+USE database_in_question;
+
+# Distinct will print uniques / no duplicates
+# Duplicate states in the list are not printed.
+
+SELECT DISTINCT state
+FROM customers
+
+_________________________________________________________________________
+EXERCISE 1:
+
+-- Return all products including:
+	-- name
+	-- unit price
+    	-- new price (unit price * 1.1)
+    
+SELECT 
+    name AS "Product Name",
+    unit_price AS "Unit Price",
+    unit_price * 1.1 AS "New Price"
+FROM products;
+
+_________________________________________________________________________
