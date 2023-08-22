@@ -1,3 +1,16 @@
+USE database_in_question;
+
+# Will print the Customers table from the Store database
+-- SELECT *
+-- FROM customers 
 
 
+# Isolates and prints the parameters listed 
+SELECT 
+	last_name, 	
+  first_name, 
+  points, 
+  (points * 10) + 100 AS "discount points"
+FROM customers
+_________________________________________________________________________
 
