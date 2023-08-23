@@ -37,3 +37,25 @@ SELECT
 FROM products;
 
 _________________________________________________________________________
+WHERE Operators
+
+USE database_in_question;
+
+SELECT *
+FROM Customers
+-- WHERE points > 3000
+-- WHERE state = "VA"
+-- WHERE state != "VA"
+-- WHERE birth_date < "1999-01-01"
+
+_________________________________________________________________________
+EXERCISE 2:
+
+-- GET ORDERS PLACED THIS YEAR
+
+SELECT *
+FROM orders
+WHERE order_date >= "2019-01-01"
+
+_________________________________________________________________________
+
