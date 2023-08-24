@@ -32,3 +32,49 @@ WHERE birth_date BETWEEN "1990-01-01" AND "2000-01-01"
 _____________________________________________________
 LIKE Operator
 
+# Anyone whose last name begins with "b"
+# % indicates any number of characters after the letter be
+SELECT *
+FROM customers
+WHERE last_name LIKE "b%"
+
+
+# %b% for any number of characters before and after the letter b
+# Will return anyone with the letter b in their last name
+SELECT *
+FROM customers
+WHERE last_name LIKE "%b%"
+
+
+# Last name ends with Y
+SELECT *
+FROM customers
+WHERE last_name LIKE "%y"
+
+
+# Underscores are blank spaces that have no character specifications
+# ______y 
+
+SELECT *
+FROM customers
+WHERE last_name LIKE "______y"
+
+_____________________________________________________
+EXCERCISE
+
+-- GET CUSTOMERS WHOSE ADDRESSES CONTAIN TRAIL OR AVENUE
+-- AND PHONE NUMBERS THAT END WITH 9
+
+-- Address
+SELECT *
+FROM customers
+WHERE address LIKE "%trail%" OR
+	  address LIKE "%avenue%"
+
+
+-- Phone Number
+SELECT *
+FROM customers
+WHERE phone LIKE "%9"
+
+_____________________________________________________
