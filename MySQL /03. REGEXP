@@ -1,1 +1,59 @@
+-- ^ For the beginning of a string
+-- $ For the end of a string
+-- | For multiple string searches. Ex "field|mac" or "^field|mac|rose"
+
+SELECT *
+FROM customers
+WHERE last_name REGEXP "field|mac|rose" 
+
+_________________________________________________________________________
+-- [] distributes the letters within to the letter outside of the brackets
+-- [gim]e searches for g-e, i-e, m-e or vice versa e[gim]
+
+SELECT *
+FROM customers
+WHERE last_name REGEXP "[gim]e"
+
+_________________________________________________________________________
+-- [] letter searches can be substituted for a range of characters
+-- [a-h] will search a through h
+
+SELECT *
+FROM customers
+WHERE last_name REGEXP "[a-h]e"
+
+_________________________________________________________________________
+EXERCISE
+
+-- GET THE CUSTOMERS WHOSE
+-- FIRST NAMES ARE ELKA OR AMBUR
+-- LAST NAMES END WITH EY OR ON
+-- LAST NAMES START WITH MY OR CONTAINS SE
+-- LAST NAMES CONTAIN B FOLLOWED BY R OR U
+
+
+-- FIRST NAMES ARE ELKA OR AMBUR
+SELECT *
+FROM customers
+WHERE first_name REGEXP "elka|ambur"
+
+
+-- LAST NAMES THAT END WITH EY OR ON
+SELECT *
+FROM customers
+WHERE last_name REGEXP "ey$|on$"
+
+
+-- LAST NAMES THAT START WITH MY OR CONTAINS SE
+SELECT *
+FROM customers
+WHERE last_name REGEXP "^my|se"
+
+
+-- LAST NAMES CONTAIN B FOLLOWED BY R OR U
+SELECT *
+FROM customers
+WHERE last_name REGEXP "b[ru]"
+
+
 
