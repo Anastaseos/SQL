@@ -1,1 +1,11 @@
+-- GET CUSTOMERS WHO DON'T HAVE A PHONE NUMBER IN THE DATABASE
+SELECT *
+FROM customers
+WHERE phone IS NULL
 
+-- AND CUSTOMERS WHO DO, EXCLUDING THOSE WHO DON'T
+SELECT *
+FROM customers
+WHERE phone IS NOT NULL
+
+________________________________________________________________
