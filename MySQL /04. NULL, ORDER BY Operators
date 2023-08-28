@@ -31,3 +31,11 @@ FROM customers
 ORDER BY birth_date
 
 ________________________________________________________________
+EXERCISE
+-- Select ALL ITEMES IN ORDER_ID WHERE ORDER_ID = 2
+-- THEN ORDER UNIT_PRICE IN DESCENDING ORDER
+
+SELECT *
+FROM order_items
+WHERE order_id = 2
+ORDER BY quantity * unit_price DESC
