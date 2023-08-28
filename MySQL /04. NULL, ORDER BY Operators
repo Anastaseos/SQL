@@ -9,3 +9,25 @@ FROM customers
 WHERE phone IS NOT NULL
 
 ________________________________________________________________
+EXERCISE
+GET THE ORDERS THAT ARE NOT SHIPPED YET
+
+SELECT *
+FROM orders
+WHERE shipped_date IS NULL
+
+________________________________________________________________
+ORDER BY OPERATOR OPTIONS
+
+SELECT *
+FROM customers
+-- ORDER BY first_name
+-- ORDER BY first_name DESC
+-- ORDER BY state DESC, first_name DESC
+
+OR ONLY SELECT first_name and last_name
+SELECT first_name, last_name
+FROM customers
+ORDER BY birth_date
+
+________________________________________________________________
