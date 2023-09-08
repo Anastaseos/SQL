@@ -1,1 +1,10 @@
+Joins a table to itself in the same database. 
+Done in cases where the comparison between two columns of a same table is required
 
+USE sql_hr;
+SELECT *
+FROM employees e
+JOIN employees m
+	ON e.reports_to = m.employee_id
+
+___________________________________________________________________
