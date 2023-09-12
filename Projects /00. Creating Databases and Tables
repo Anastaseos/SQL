@@ -1,1 +1,36 @@
+-- Create Databases
+CREATE DATABASE Store;
+CREATE DATABASE Inventory_System;
+CREATE DATABASE Invoicing_System;
+
+___________________________________________________________
+-- Create Store Tables
+USE Store;
+
+CREATE TABLE Customers (
+customerID INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(200),
+age INT,
+dob DATE,
+address VARCHAR(200)
+
+);
+
+CREATE TABLE Products ( 
+productID INT AUTO_INCREMENT PRIMARY KEY,
+productName VARCHAR(200),
+stockQuantity INT
+);
+
+CREATE TABLE Orders (
+orderID INT auto_increment primary key,
+customerID INT,
+productID INT,
+orderDATE DATE,
+
+FOREIGN KEY (customerID) REFERENCES Customers(customerID),
+FOREIGN KEY (productID) REFERENCES Products(productID)
+);
+
+___________________________________________________________
 
