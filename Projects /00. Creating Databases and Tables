@@ -32,7 +32,7 @@ CREATE TABLE Orders (
 ___________________________________________________________
 USE Inventory;
 
-CREATE TABLE TotalProducts (
+CREATE TABLE Products (
     ProductID INT PRIMARY KEY,
     ProductName VARCHAR(255) NOT NULL,
     TotalQuantity INT NOT NULL DEFAULT 0
