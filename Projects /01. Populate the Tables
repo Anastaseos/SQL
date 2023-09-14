@@ -1,1 +1,49 @@
+Populate the STORE Database
+
+USE Store;
+
+INSERT INTO Customers (Name, Age, DOB, Address)
+VALUES 
+('John Doe', 30, '1993-05-15', '123 Elm St, Fantasy City, BG 10001'),
+('Jane Smith', 28, '1995-08-10', '456 Maple Ave, Fantasy Town, BG 10002'),
+('Alice Johnson', 34, '1989-01-12', '789 Birch Ln, Fantasy Village, BG 10003'),
+('Bob Brown', 40, '1983-12-05', '101 Pine Dr, Fantasy Hamlet, BG 10004'),
+('Charlie Williams', 25, '1998-02-23', '202 Oak Blvd, Fantasy Isle, BG 10005'),
+('Daisy Davis', 32, '1991-09-19', '303 Cedar Rd, Fantasy Port, BG 10006'),
+('Edward Wilson', 29, '1994-03-08', '404 Spruce Ct, Fantasy Cove, BG 10007'),
+('Fiona Garcia', 27, '1996-11-26', '505 Redwood Way, Fantasy Nook, BG 10008'),
+('George Martinez', 36, '1987-06-16', '606 Chestnut Pl, Fantasy Hollow, BG 10009'),
+('Helen Robinson', 38, '1985-04-04', '707 Sequoia Cir, Fantasy Burrow, BG 10010');
+
+
+INSERT INTO Products (ProductName, InStockQuantity)
+VALUES
+('Sword of Sharpness', 15),
+('Shield of Reflection', 10),
+('Potion of Healing', 50),
+('Ring of Invisibility', 5),
+('Boots of Speed', 12),
+('Helmet of Understanding', 8),
+('Bracers of Archery', 20),
+('Cloak of Protection', 25),
+('Gloves of Dexterity', 30),
+('Amulet of Health', 7);
+
+
+
+--For simplicity, these orders will link the first 10 customers to products in a one-to-one manner, 
+meaning customer 1 ordered product 1, customer 2 ordered product 2, and so on
+
+INSERT INTO Orders (CustomerID, ProductID)
+VALUES 
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5),
+(6, 6),
+(7, 7),
+(8, 8),
+(9, 9),
+(10, 10);
 
