@@ -1,5 +1,4 @@
-Populate the STORE Database
-
+POPULATE THE STORE DATABASE
 USE Store;
 
 INSERT INTO Customers (Name, Age, DOB, Address)
