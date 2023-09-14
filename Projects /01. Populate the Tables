@@ -47,3 +47,53 @@ VALUES
 (9, 9),
 (10, 10);
 
+______________________________________________________________________________________________________
+
+POPULATE THE INVENTORY DATABASE
+USE Inventory;
+
+INSERT INTO Products (ProductID, ProductName, TotalQuantity)
+VALUES 
+(1, 'Sword of Sharpness', 30),
+(2, 'Shield of Reflection', 20),
+(3, 'Potion of Healing', 100),
+(4, 'Ring of Invisibility', 10),
+(5, 'Boots of Speed', 24),
+(6, 'Helmet of Understanding', 16),
+(7, 'Bracers of Archery', 40),
+(8, 'Cloak of Protection', 50),
+(9, 'Gloves of Dexterity', 60),
+(10, 'Amulet of Health', 14);
+
+______________________________________________________________________________________________________
+
+POPULATE THE INVOICING DATABASE
+USE Invoicing;
+
+INSERT INTO Bills (CustomerID, OrderID, TotalAmount)
+VALUES 
+(1, 1, 50.00),
+(2, 2, 75.00),
+(3, 3, 20.00),
+(4, 4, 100.00),
+(5, 5, 60.00),
+(6, 6, 55.00),
+(7, 7, 45.00),
+(8, 8, 65.00),
+(9, 9, 35.00),
+(10, 10, 85.00);
+
+INSERT INTO BillDetails (BillID, ProductID, Quantity, Cost)
+VALUES 
+(1, 1, 1, 50.00),
+(2, 2, 1, 75.00),
+(3, 3, 1, 20.00),
+(4, 4, 1, 100.00),
+(5, 5, 1, 60.00),
+(6, 6, 1, 55.00),
+(7, 7, 1, 45.00),
+(8, 8, 1, 65.00),
+(9, 9, 1, 35.00),
+(10, 10, 1, 85.00);
+
+
