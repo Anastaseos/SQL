@@ -1,0 +1,4 @@
+SELECT retrieves data from one or more tables.
+SELECT * 
+FROM Store.Customers
+_________________________________________________________________
