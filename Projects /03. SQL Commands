@@ -6,4 +6,8 @@ INSERT adds new data into a table
 INSERT INTO Store.Customers (Name, Age, DOB, Address)
 VALUES ("New Name", 35, 1988 - 01 - 01, "New Address")
 _________________________________________________________________
-
+UPDATE modifies existing data in a table
+UPDATE Store.Customers
+SET Address = "Updated Address goes here"
+WHERE Name = "John Doe";
+_________________________________________________________________
