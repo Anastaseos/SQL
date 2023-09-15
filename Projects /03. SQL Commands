@@ -2,3 +2,8 @@ SELECT retrieves data from one or more tables.
 SELECT * 
 FROM Store.Customers
 _________________________________________________________________
+INSERT adds new data into a table
+INSERT INTO Store.Customers (Name, Age, DOB, Address)
+VALUES ("New Name", 35, 1988 - 01 - 01, "New Address")
+_________________________________________________________________
+
