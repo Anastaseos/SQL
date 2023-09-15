@@ -11,3 +11,7 @@ UPDATE Store.Customers
 SET Address = "Updated Address goes here"
 WHERE Name = "John Doe";
 _________________________________________________________________
+WHERE is used with other commands (Select, Update, Delete) to filter records
+SELECT *
+FROM Store.Customers WHERE Age > 30;
+_________________________________________________________________
