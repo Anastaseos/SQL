@@ -18,3 +18,20 @@ _________________________________________________________________
 DELETE removes specific data from a specific table
 DELETE FROM Store.Customers WHERE name = "John Doe";
 _________________________________________________________________
+ORDER BY sorts a table by specific parameters
+SELECT *
+FROM Store.Products ORDER BY StockQuantity DESC;
+_________________________________________________________________
+INNER JOIN combines rows from two or mroe tables based on a related column
+SELECT Customers.Name, Products.ProductName 
+FROM Store.Customers 
+INNER JOIN Store.Orders ON Customers.CustomerID = Orders.CustomerID
+INNER JOIN Store.Products ON Orders.ProductID = Products.ProductID;
+_________________________________________________________________
+GROUP BY groups the resulting set with an aggregate function (COUNT, SUM, AVERAGE)
+SELECT ProductID, COUNT(OrderID) 
+FROM Store.Orders 
+GROUP BY ProductID;
+_________________________________________________________________
+
+
