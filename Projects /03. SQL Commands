@@ -15,3 +15,6 @@ WHERE is used with other commands (Select, Update, Delete) to filter records
 SELECT *
 FROM Store.Customers WHERE Age > 30;
 _________________________________________________________________
+DELETE removes specific data from a specific table
+DELETE FROM Store.Customers WHERE name = "John Doe";
+_________________________________________________________________
